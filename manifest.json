@@ -1,0 +1,25 @@
+{
+  "name": "chaoxing-grader-universal",
+  "version": "1.0.0",
+  "owner": "Hu Wenkai",
+  "updated_at": "2026-10-26",
+  "status": "active",
+  "maturity_tier": "production",
+  "lifecycle_stage": "production",
+  "context_budget_tier": "production",
+  "review_cadence": "monthly",
+  "skill_archetype": "scaffold",
+  "target_platforms": [
+    "openai",
+    "claude",
+    "generic",
+    "agent-skills-compatible",
+    "vscode"
+  ],
+  "factory_components": [
+    "references",
+    "scripts",
+    "reports",
+    "tests"
+  ]
+}

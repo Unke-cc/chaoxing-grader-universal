@@ -1,0 +1,26 @@
+interface:
+  display_name: "超星作业智能批改全平台通用版 (ChaoXing Grader Universal)"
+  short_description: "跨平台超星教师端作业自动化批阅、正态分布赋分与批量入库"
+  default_prompt: "使用 $chaoxing-grader-universal 对已开启 CDP 调试端口的 Chrome 中的超星作业进行自动化批阅与评分。"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets:
+    - "openai"
+    - "claude"
+    - "generic"
+    - "vscode"
+  activation:
+    mode: "manual"
+    paths: []
+  execution:
+    context: "inline"
+    shell: "bash"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow-metadata-only"
+  degradation:
+    openai: "metadata-adapter"
+    claude: "neutral-source-plus-adapter"
+    generic: "neutral-source"
+    vscode: "agent-skills-source-with-vscode-notes"
